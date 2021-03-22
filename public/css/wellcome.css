@@ -1,0 +1,88 @@
+html,
+body {
+  background-color:rgba(11, 46, 121, 0.8);
+  background-image: url(/img/pulpo_mau.png);
+  
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.wellcome-card.wellcome-content {
+  text-align: center;
+}
+
+.links > a {
+  padding: 0 25px;
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.margin-bajo {
+  margin-bottom: 30px;
+}
+
+.wellcome-m8 {
+  margin: 8px;
+}
+
+.wellcome-m16 {
+  margin: 16px;
+}
+
+.wellcome-card {
+  padding: 16px;
+  width: 250px;
+  height: 150px;
+  background: white;
+  border-radius: 10px;
+  /*box-shadow: 5px 10px 8px #00b0ff; */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+
+.wellcome-card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);  
+}
+
+
+.wellcome-card p{
+  font-family: "Nunito", sans-serif;
+}
+
+.wellcome-card span.wellcome-heart{
+  /*color: red; */
+  color: #FF1744;
+
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
