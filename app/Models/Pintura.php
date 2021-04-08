@@ -15,7 +15,10 @@ class Pintura extends Model
      * @var array
      */
     protected $fillable = [
-        'color',
+        'color_name',
         'color_hex',
+        'color_number',
+        'marca_id',
+        'categoria_id'
     ];
 }

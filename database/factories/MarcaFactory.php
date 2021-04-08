@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Producto;
+use App\Models\Marca;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ProductoFactory extends Factory
+class MarcaFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Producto::class;
+    protected $model = Marca::class;
 
     /**
      * Define the model's default state.
@@ -22,10 +22,7 @@ class ProductoFactory extends Factory
     public function definition()
     {
         return [
-            'nombre'=>$this->faker->sentence(2),
-            'descripcion' => $this->faker->text(),
-            'precio_compra'=> 100.5,
-            'categoria_id' => $this->faker->numberBetween(1,3)
+           //
         ];
     }
 }

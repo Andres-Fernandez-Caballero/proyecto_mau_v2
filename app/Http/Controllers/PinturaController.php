@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pintura;
+use Facade\FlareClient\View;
 use Illuminate\Http\Request;
 
 class PinturaController extends Controller
@@ -24,7 +25,7 @@ class PinturaController extends Controller
      */
     public function create()
     {
-        //
+        return view('sections.pintura.create');
     }
 
     /**
@@ -35,7 +36,17 @@ class PinturaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $pintura = new Pintura([
+            'color_name' => $request->get('color_name'),
+            'color_number' => $request->get('color_number'),
+            'color_hex' => '#0000',
+            'marca_id' => $request->get('marca_id'),
+            'categoria_id' => 1
+        ]);
+
+        $pintura->save();
+        return redirect()->route('home');
     }
 
     /**

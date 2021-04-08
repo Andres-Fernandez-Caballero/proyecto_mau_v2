@@ -15,8 +15,13 @@ class CreatePinturasTable extends Migration
     {
         Schema::create('pinturas', function (Blueprint $table) {
             $table->id();
-            $table->string('color');
+            $table->string('color_name');
+            $table->integer('color_number')->default(0000);    
             $table->string('color_hex');
+            $table->unsignedBigInteger('marca_id');
+            $table->foreign('marca_id')->references('id')->on('marcas');
+            $table->unsignedBigInteger('categoria_id');
+            $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
         });
     }
