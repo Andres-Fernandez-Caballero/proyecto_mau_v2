@@ -22,9 +22,11 @@ class PinturaFactory extends Factory
     public function definition()
     {
         return [
-            'color' => $this->faker->colorName,
+            'color_name' => $this->faker->colorName,
             'color_hex' => $this->faker->hexColor,
-
+            'color_number' => $this->faker->numberBetween(1000,9000),
+            'marca_id' => 1,
+            'categoria_id' => 1
         ];
     }
 }

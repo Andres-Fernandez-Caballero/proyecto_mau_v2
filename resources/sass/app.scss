@@ -1,8 +1,31 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+// Materialize-css
+//@import '/node_modules/materialize-css/dist/css/materialize.css'; 
+
+//@import '/node_modules/mdb-ui-kit/css/mdb.min.css';
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+//Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+
+// Materialize Css framework
+//@import '/node_modules/materialize-css/dist/css/materialize.css'
+
+.card{
+    border-radius: 10px;
+    transition: 1s;
+    background-color: white;
+    //box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);    
+}
+
+.fixed-action-btn{
+    right: 1rem;
+    bottom: 1rem;
+}

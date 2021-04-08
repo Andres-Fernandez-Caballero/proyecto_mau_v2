@@ -7,12 +7,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Proyecto Mau') }}</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -26,7 +27,6 @@
         <div>
             @yield('components.navbar')
         </div>
-
         <main class="py-4">
             @yield('content')
         </main>

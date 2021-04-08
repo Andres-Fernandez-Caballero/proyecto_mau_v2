@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\PinturaController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use phpDocumentor\Reflection\Types\Resource_;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +17,11 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('sections.wellcome');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('/pinturas', App\Http\Controllers\PinturaController::class);
 
