@@ -1,7 +1,8 @@
 html,
 body {
-  background-color: rgba(11, 46, 121, 0.8);
+  background-color:rgba(11, 46, 121, 0.8);
   background-image: url(/img/pulpo_mau.png);
+  
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   height: 100vh;
@@ -13,9 +14,12 @@ body {
 }
 
 .flex-center {
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .position-ref {
@@ -65,19 +69,20 @@ body {
   transition: 1s;
 }
 
-.wellcome-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+.wellcome-card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);  
 }
 
-.wellcome-card p {
+
+.wellcome-card p{
   font-family: "Nunito", sans-serif;
 }
 
-.wellcome-card span.wellcome-heart {
+.wellcome-card span.wellcome-heart{
   /*color: red; */
   color: #FF1744;
+
   font-weight: bolder;
   font-size: 1.25rem;
 }
-
 
