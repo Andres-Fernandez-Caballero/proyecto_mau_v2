@@ -18,11 +18,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/wellcome.css') }}">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        
+        <link rel="stylesheet" href="{{asset('css/wellcome.css')}}">
     </head>
-    <body class="antialiased">
+    <body class="">
         <div id="app">
             <main>
                 @yield('content')
