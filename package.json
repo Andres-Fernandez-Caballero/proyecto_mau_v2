@@ -25,7 +25,7 @@
         "@fortawesome/fontawesome-free": "^5.15.3",
         "mdb-ui-kit": "^3.4.0"
     },
-    "engines"{
+    "engines":{
         "node": ">12.x",
         "npm": ">=4.4.0"
     }
