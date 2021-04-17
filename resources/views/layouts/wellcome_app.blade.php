@@ -26,7 +26,7 @@
             <main>
                 @yield('content')
             </main>
-        </div>
+        </div>    
     <!-- fin -->
     </body>
 </html>

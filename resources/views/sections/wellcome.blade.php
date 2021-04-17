@@ -25,8 +25,8 @@
                 </header>
             </main>
         </div>
-    
         <footer>
+            <!-- Agregar un footer lindo ;) -->
             
         </footer>
 @endsection

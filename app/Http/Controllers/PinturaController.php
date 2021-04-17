@@ -40,7 +40,7 @@ class PinturaController extends Controller
         $pintura = new Pintura([
             'color_name' => $request->get('color_name'),
             'color_number' => $request->get('color_number'),
-            'color_hex' => '#0000',
+            'color_hex' => $request->get('color_hex'),
             'marca_id' => $request->get('marca_id'),
             'categoria_id' => 1
         ]);
