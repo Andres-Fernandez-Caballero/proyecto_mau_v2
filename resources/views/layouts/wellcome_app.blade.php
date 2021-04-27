@@ -6,8 +6,19 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <!-- fondo barra explorer -->
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#1266F1">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#1266F1">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1266F1">
         
+        <!-- favicon -->
         <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+        
+        <!-- titulo -->
         <title>{{config("app.name")}}</title>
 
 
