@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Marca;
 use App\Models\Pintura;
 use Facade\FlareClient\View;
 use Illuminate\Http\Request;
@@ -25,7 +26,8 @@ class PinturaController extends Controller
      */
     public function create()
     {
-        return view('sections.pintura.create');
+        $marcas = Marca::all();
+        return view('sections.pintura.create')->with('marcas',$marcas);
     }
 
     /**
@@ -57,7 +59,7 @@ class PinturaController extends Controller
      */
     public function show(Pintura $pintura)
     {
-        //
+        // por ahora no deberia usarse
     }
 
     /**
@@ -68,7 +70,7 @@ class PinturaController extends Controller
      */
     public function edit(Pintura $pintura)
     {
-        //
+        return $pintura;
     }
 
     /**
@@ -91,6 +93,8 @@ class PinturaController extends Controller
      */
     public function destroy(Pintura $pintura)
     {
-        //
+        $pintura_a_borrar = Pintura::find($pintura->id);
+        $pintura_a_borrar->delete();
+        return redirect()->back();
     }
 }

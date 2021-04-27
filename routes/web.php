@@ -24,4 +24,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/pinturas', App\Http\Controllers\PinturaController::class);
+Route::resource('/marcas', App\Http\Controllers\MarcaController::class);
 

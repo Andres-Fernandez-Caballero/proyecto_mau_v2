@@ -28,4 +28,21 @@
 .fixed-action-btn{
     right: 1rem;
     bottom: 1rem;
+    -webkit-animation: zoomIn 0.5s linear forwards;
+    animation: zoomIn 0.5s linear forwards;
 }
+
+
+@-webkit-keyframes zoomIn {
+    //0% { opacity: 0; }
+    //100% { opacity: 1; }
+    0% { transform: scale(0); }
+    100% {transform: scale(1);}
+  }
+  
+  @keyframes zoomIn {
+    //0% { opacity: 0; }
+    //100% { opacity: 1; }
+    0% { transform: scale(0); }
+    100% {transform: scale(1);}
+  }

@@ -21,4 +21,8 @@ class Pintura extends Model
         'marca_id',
         'categoria_id'
     ];
+
+    public function marca(){
+        return $this->hasOne('App\Models\Marca');
+    }
 }
