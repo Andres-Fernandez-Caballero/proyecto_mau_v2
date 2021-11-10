@@ -1,44 +1,7 @@
 @extends('layouts.appv2')
 @section('content')
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <a class="navbar-brand mx-auto" href="#">Productos en Stock</a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li>
-                  <!-- logout -->
-                  <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    Logout
-                </a>
-                
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                </form>
-                </li>
-            </ul>
-            <form class="d-flex input-group w-auto">
-                <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
-                <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
-                    Search
-                </button>
-            </form>
-        </div>
-    </div>
-</nav>
+@include('components.navbarv2')
 
 <section>
     <article class="m-4">
